@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -289,9 +291,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CollisionDetection\BitCollision.cs" />
+    <Compile Include="Assets\Scripts\Controllers\AirSupplyController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\BiDirectionalSpriteController.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameOverScreenController.cs" />
     <Compile Include="Assets\Scripts\Controllers\IScoreInformation.cs" />
+    <Compile Include="Assets\Scripts\Controllers\KeyColourController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\MinerWillyController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\TravelatorController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\WillyStateMachine.cs" />
     <Compile Include="Assets\Scripts\Debug\DebugCreateSprite.cs" />
     <Compile Include="Assets\Scripts\Debug\DebugMode.cs" />
     <Compile Include="Assets\Scripts\Debug\DrawScreen.cs" />
@@ -317,6 +325,7 @@
     <Compile Include="Assets\Scripts\Room\Renderers\MinerWillyRenderer.cs" />
     <Compile Include="Assets\Scripts\Room\Renderers\PlayerScoreRenderer.cs" />
     <Compile Include="Assets\Scripts\Room\Renderers\PortalRenderer.cs" />
+    <Compile Include="Assets\Scripts\Room\Renderers\RendererFactory.cs" />
     <Compile Include="Assets\Scripts\Room\Renderers\RoomNameRenderer.cs" />
     <Compile Include="Assets\Scripts\Room\Renderers\StaticObjectRenderer.cs" />
     <Compile Include="Assets\Scripts\Room\RoomData.cs" />
@@ -333,6 +342,7 @@
     <Compile Include="Assets\Scripts\ZXSpectrum\ZXAttribute.cs" />
     <Compile Include="Assets\Scripts\ZXSpectrum\ZXColour.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>
